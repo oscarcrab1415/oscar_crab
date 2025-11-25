@@ -1,0 +1,176 @@
+/* Import Norse Bold font (or similar) */
+@import url('https://fonts.googleapis.com/css2?family=Norse+Bold&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 40%;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    margin-top: 20vh;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.brand {
+    font-family: 'Norse Bold', serif;
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.photo-credit {
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+}
+
+.photo-credit a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.main-content {
+    width: 60%;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-section {
+    padding: 40px 50px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.intro-text {
+    margin-bottom: 20px;
+}
+
+/* Form Section Styles */
+.form-section {
+    background-color: white;
+    padding: 40px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-group label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 8px 12px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+/* Focus state */
+.input-group input:focus {
+    border-color: #5b8cd3;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Invalid state for passwords */
+.input-group input:invalid {
+    border-color: #ff6b6b;
+}
+
+.input-group input:valid {
+    border-color: #E5E7EB;
+}
+
+/* Submit Section Styles */
+.submit-section {
+    padding: 40px 50px;
+}
+
+.create-account-btn {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    padding: 15px 45px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.create-account-btn:hover {
+    background-color: #4a5c3a;
+}
+
+.login-text {
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+.login-text a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
